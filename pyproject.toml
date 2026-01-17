@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "neumann"
+version = "0.1.0"
+description = "Universal constructor for your terminal, optimized for Qwen3-Coder"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    { name = "Giblesnot", email = "giblesnot@example.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/kajuberdut/neumann"
+
+[project.scripts]
+neu = "neumann.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["neumann"]
